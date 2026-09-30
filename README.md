@@ -341,21 +341,8 @@ GET /api/borrowings?status=returned
 
 หลังเพิ่ม Frontend แล้วทดสอบ API เดิมทั้ง 3 resource อีกครั้ง ผลตรงกับการทดสอบก่อนหน้าทุกเคส และ mock data ไม่ถูกลบออกจาก source code (books ยังคงมี 50 รายการ, users 6 รายการ, borrowings 5 รายการในไฟล์ข้อมูล) การเปลี่ยนแปลงจำนวนรายการที่เห็นระหว่างทดสอบเกิดจากการ POST/DELETE ผ่าน API ใน runtime เท่านั้น
 
-## 12. Screenshots
 
-### ภาพหลักฐานการ Debug/Test REST API
-
-<!-- TODO: บันทึกภาพหลักฐานการทดสอบ REST API เช่น ผลลัพธ์จาก Postman/เบราว์เซอร์ DevTools แล้วบันทึกเป็น screenshots/api-test.png -->
-![REST API Test](screenshots/api-test.png)
-
-### ภาพหลักฐานหน้าเว็บไซต์
-
-<!-- TODO: บันทึกภาพหน้าเว็บไซต์ (หน้า Login และหน้า Dashboard/รายการหนังสือ) แล้วบันทึกเป็น screenshots/website.png -->
-![Website](screenshots/website.png)
-
-> ยังไม่มีไฟล์ภาพจริงในโฟลเดอร์ `screenshots/` ต้องบันทึกภาพแล้ววางไฟล์ตามชื่อด้านบนก่อนส่งงาน
-
-## 13. Data Storage
+## 12. Data Storage
 
 ข้อมูลทั้งหมดในเวอร์ชันนี้เก็บแบบ **in-memory mock data** ในไฟล์ JavaScript ไม่ได้ใช้ Database
 
@@ -367,7 +354,7 @@ GET /api/borrowings?status=returned
 
 ข้อมูลจะ **รีเซ็ตกลับไปเป็นค่าเริ่มต้นทุกครั้งที่ restart เซิร์ฟเวอร์** การเพิ่ม แก้ไข หรือลบข้อมูลผ่าน API จะมีผลเฉพาะในรอบการรันเซิร์ฟเวอร์นั้นเท่านั้น ไม่ถูกบันทึกลงไฟล์
 
-## 14. Limitations
+## 13. Limitations
 
 ข้อจำกัดของโปรเจกต์ในเวอร์ชันนี้
 
@@ -381,11 +368,11 @@ GET /api/borrowings?status=returned
 - ตรวจสอบ input บางส่วนทำที่ฝั่ง server และฝั่ง client เท่านั้น ยังไม่มี rate limiting และ security header
 - ไม่มีการจัดการกรณีแย่งหนังสือ (race condition) และไม่มีระบบแจ้งเตือนก่อนครบกำหนด
 
-## 15. Repository
+## 14. Repository
 
 <!-- TODO: ใส่ GitHub Repository URL ภายหลัง -->
 Repository URL: _ยังไม่ได้กำหนด_
 
-## 16. License
+## 15. License
 
 หมายเหตุ: `package.json` ระบุ `"license": "ISC"` ไว้ แต่โปรเจกต์นี้จัดทำขึ้นเพื่อการศึกษา (Mini Project) ไม่ได้มีเจตนาใช้งานเชิงพาณิชย์ และไม่ได้ออกแบบมาให้พร้อมใช้งานในระบบ Production
