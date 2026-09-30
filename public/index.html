@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Book Borrowing System</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="app-header" id="app-header" hidden>
+    <div class="app-header__inner">
+      <a class="brand" href="#/books">
+        <span class="brand__logo">&#128218;</span>
+        <span>ห้องสมุด</span>
+      </a>
+      <nav class="main-nav" id="main-nav"></nav>
+      <div class="user-chip" id="user-chip"></div>
+    </div>
+  </header>
+
+  <main class="container" id="app" hidden></main>
+
+  <div id="toast-container"></div>
+  <div id="modal-root"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/books.js"></script>
+  <script src="/js/borrowings.js"></script>
+  <script src="/js/admin.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "library-book",
+  "version": "1.0.0",
+  "description": "Library Book Borrowing System - ระบบยืม-คืนหนังสือห้องสมุด",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js"
+  },
+  "keywords": [
+    "library",
+    "express",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
